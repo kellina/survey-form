@@ -1,0 +1,64 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<htmL>
+  <head>
+    <title>Form by Kellina</title>
+  </head>
+  <body>
+    <h1 id="title">Formulário para pesquisa de opnião</h1>
+    <p id="description">Obrigado por dedicar um tempo para nos ajudar a melhorar a plataforma</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Nome:</label><br>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome" required><br>
+      <label for="sobrenome">Sobrenome:</label><br>
+      <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome"><br>
+      <label for="email" id="email-label">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+      <label for="age" id="number-label">Idade:</label><br>
+      <input type="number" id="number" name="age" min="1" max="99" value="" placeholder="Idade"><br>
+    
+      <label for="sexo">Sexo:</label><br>
+      <input type="radio" id="masculino" name="sexo" value="masculino">
+      <label for="masculino">Masculino</label><br>
+      <input type="radio" id="feminino" name="sexo" value="feminino">
+      <label for="feminino">Feminino</label><br>
+    
+      <label for="recomenda">Você recomendaria nosso site para seus amigos?</label><br>
+      <input type="radio" id="sim" name="recomenda" value="sim">
+      <label for="sim">Sim</label><br>
+      <input type="radio" id="nao" name="recomenda" value="nao">
+      <label for="nao">Não</label><br>
+      <input type="radio" id="talvez" name="recomenda" value="talvez">
+      <label for="talvez">Talvez</label><br>
+   
+    <legend>Que assunto mais gostou no site:</legend>
+    <select id="dropdown" name="assunto">
+      <option value="" disabled selected>Selecione uma opção</option>
+      <option value="stiloVida">Estilo de Vida</option>
+      <option value="passeio">Passeios</option>
+      <option value="moda">Moda</option>
+      <option value="diaDia">Dia-a-Dia</option><br>
+    </select>
+    <p>         
+      <label for="corFavorita">Selecione suas cores favoritas:</label><br>
+      <input type="checkbox" id="cor1" name="cor1" value="Rosa">
+      <label for="cor1">Rosa</label><br>
+      <input type="checkbox" id="cor2" name="cor2" value="Vermelho">
+      <label for="cor2"> Vermelho</label><br>
+      <input type="checkbox" id="cor3" name="cor3" value="Azul">
+      <label for="cor3">Azul</label><br>
+      <input type="checkbox" id="cor4" name="cor4" value="Amarelo">
+      <label for="cor4">Amarelo</label><br>
+      <input type="checkbox" id="cor5" name="cor5" value="Verde">
+      <label for="cor5">Verde</label><br>
+     </p>
+     <p>
+      <label for="texto">Deixe um comentário ou sugestão:</label><br>
+      <textarea id="texto" name="msg" maxlength="140" rows="5"></textarea>
+    </p>
+    <p>
+      <button id="submit">Enviar</button>
+    </p>
+    </form>
+  </body>
+</html>
