@@ -1,64 +1,106 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Form by Kellina</title>
+</head>
 
-<htmL>
-  <head>
-    <title>Form by Kellina</title>
-  </head>
-  <body>
-    <h1 id="title">Formulário para pesquisa de opnião</h1>
-    <p id="description">Obrigado por dedicar um tempo para nos ajudar a melhorar a plataforma</p>
-    <form id="survey-form">
-      <label for="name" id="name-label">Nome:</label><br>
-      <input type="text" id="name" name="name" placeholder="Digite seu nome" required><br>
-      <label for="sobrenome">Sobrenome:</label><br>
-      <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome"><br>
-      <label for="email" id="email-label">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
-      <label for="age" id="number-label">Idade:</label><br>
-      <input type="number" id="number" name="age" min="1" max="99" value="" placeholder="Idade"><br>
-    
-      <label for="sexo">Sexo:</label><br>
-      <input type="radio" id="masculino" name="sexo" value="masculino">
-      <label for="masculino">Masculino</label><br>
-      <input type="radio" id="feminino" name="sexo" value="feminino">
-      <label for="feminino">Feminino</label><br>
-    
-      <label for="recomenda">Você recomendaria nosso site para seus amigos?</label><br>
-      <input type="radio" id="sim" name="recomenda" value="sim">
-      <label for="sim">Sim</label><br>
-      <input type="radio" id="nao" name="recomenda" value="nao">
-      <label for="nao">Não</label><br>
-      <input type="radio" id="talvez" name="recomenda" value="talvez">
-      <label for="talvez">Talvez</label><br>
-   
-    <legend>Que assunto mais gostou no site:</legend>
-    <select id="dropdown" name="assunto">
-      <option value="" disabled selected>Selecione uma opção</option>
-      <option value="stiloVida">Estilo de Vida</option>
-      <option value="passeio">Passeios</option>
-      <option value="moda">Moda</option>
-      <option value="diaDia">Dia-a-Dia</option><br>
-    </select>
-    <p>         
-      <label for="corFavorita">Selecione suas cores favoritas:</label><br>
-      <input type="checkbox" id="cor1" name="cor1" value="Rosa">
-      <label for="cor1">Rosa</label><br>
-      <input type="checkbox" id="cor2" name="cor2" value="Vermelho">
-      <label for="cor2"> Vermelho</label><br>
-      <input type="checkbox" id="cor3" name="cor3" value="Azul">
-      <label for="cor3">Azul</label><br>
-      <input type="checkbox" id="cor4" name="cor4" value="Amarelo">
-      <label for="cor4">Amarelo</label><br>
-      <input type="checkbox" id="cor5" name="cor5" value="Verde">
-      <label for="cor5">Verde</label><br>
-     </p>
-     <p>
-      <label for="texto">Deixe um comentário ou sugestão:</label><br>
-      <textarea id="texto" name="msg" maxlength="140" rows="5"></textarea>
-    </p>
-    <p>
-      <button id="submit">Enviar</button>
-    </p>
-    </form>
-  </body>
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4" id="title">Kellina Survey Form</h1>
+    <hr class="my-4">
+    <p class="lead" id="description">Thank you for taking the time to help us improme the platform</p>
+  </div>
+
+  <form id="survey-form" class="container">
+    <div class="form-group">
+      <label for="name" id="name-label"> First name:</label>
+      <input class="form-control" type="text" id="name" name="name" placeholder="Enter your first name" required>
+    </div>
+    <div class="form-group">
+      <label for="sobrenome">Last name:</label>
+      <input class="form-control" type="text" id="sobrenome" name="sobrenome" placeholder="Enter your last name">
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email:</label>
+      <input class="form-control" type="email" id="email" name="email" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+      <label for="age" id="number-label">Age:</label>
+      <input class="form-control" type="number" id="number" name="age" min="1" max="99" value="" placeholder="Age">
+    </div>
+
+    <div class="form-group">
+      <label for="sexo">Gender:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="masculino" name="sexo" value="masculino">
+        <label class="form-check-label" for="masculino">Male</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="feminino" name="sexo" value="feminino">
+        <label class="form-check-label" for="feminino">Female</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+    <label for="recomenda">Would you recommend Kellina site to a friend?</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="sim" name="recomenda" value="sim">
+      <label class="form-check-label" for="sim">Definity</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="nao" name="recomenda" value="nao">
+      <label class="form-check-label" for="nao">Maybe</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="talvez" name="recomenda" value="talvez">
+      <label class="form-check-label" for="talvez">Not sure</label>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label for="assunto">What is your favorite feature of site?</label>
+      <select class="form-control" id="dropdown" name="assunto">
+        <option value="" disabled selected>Select an option</option>
+        <option value="stiloVida">Life style</option>
+        <option value="passeio">Trips</option>
+        <option value="moda">Fashion</option>
+        <option value="diaDia">Day-to-day</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+    <label for="corFavorita">Select your favorite colors:</label>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="cor1" name="cor1" value="Rosa">
+      <label class="form-check-label" for="cor1">Pink</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="cor2" name="cor2" value="Vermelho">
+      <label class="form-check-label" for="cor2"> Red</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="cor3" name="cor3" value="Azul">
+      <label class="form-check-label" for="cor3">Blue</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="cor4" name="cor4" value="Amarelo">
+      <label class="form-check-label" for="cor4">Yellow</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="cor5" name="cor5" value="Verde">
+      <label class="form-check-label" for="cor5">Green</label>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label for="texto">Any comments or suggestions?</label>
+      <textarea class="form-control" id="texto" name="msg" maxlength="140" rows="5"></textarea>
+    </div>
+
+    <button class="btn btn-primary" id="submit">Submit</button>
+
+  </form>
+</body>
+
 </html>
